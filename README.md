@@ -24,10 +24,20 @@ package manager: `pnpm-lock.yaml` is the versioned lockfile and CI installs with
 `--frozen-lockfile`.
 
 ```bash
+git clone https://github.com/citi-onboarding/mobile-pta-squad-safira.git
+cd mobile-pta-squad-safira
 corepack enable
-pnpm install
+pnpm install --frozen-lockfile
+cp .env.example .env
 pnpm start        # then press `a` for Android or `w` for web
 ```
+
+This repository uses pnpm 10.24.0 through Corepack, and the version switches by
+itself; a global pnpm 12 installed for the backend and web does not interfere.
+If `corepack enable` is denied on Windows, run it from an administrator
+terminal. Point
+`EXPO_PUBLIC_API_URL` at the backend API (see `.env.example` for emulator and
+device URLs).
 
 | Command              | What it does                                                        |
 | -------------------- | ------------------------------------------------------------------- |
