@@ -1,18 +1,18 @@
 {
   "expo": {
-    "name": "nativewind-boilerplate",
-    "slug": "nativewind-boilerplate",
-    "scheme": "citiboilerplate",
+    "name": "DistriLux Portal",
+    "slug": "distrilux-portal",
+    "scheme": "distrilux-portal",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "icon": "./assets/images/icon.png",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "br.org.citi.boilerplate"
+      "bundleIdentifier": "br.com.distrilux.portal"
     },
     "android": {
-      "package": "br.org.citi.boilerplate",
+      "package": "br.com.distrilux.portal",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
