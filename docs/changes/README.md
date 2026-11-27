@@ -28,8 +28,9 @@ to date as the change evolves.
 
 ## Index
 
-| Change ID | Title | Status | Related ADRs |
-| --------- | ----- | ------ | ------------ |
+| Change ID                                 | Title                                            | Status      | Related ADRs |
+| ----------------------------------------- | ------------------------------------------------ | ----------- | ------------ |
+| [add-design-system](add-design-system.md) | DistriLux identity in the manager app (FRONT-02) | in-progress | —            |
 
 <!--
 Add one row per change doc.

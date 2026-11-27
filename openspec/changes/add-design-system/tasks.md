@@ -21,11 +21,11 @@
 
 ## 4. Refactor
 
-- [ ] 4.1 Review names, comments and duplication without changing behavior; tests stay green.
+- [x] 4.1 Review names, comments and duplication without changing behavior; tests stay green.
 
 ## 5. Consolidation
 
-- [ ] 5.1 Update `SETUP.md` where it names Barlow.
-- [ ] 5.2 Run `pnpm verify` (typecheck, lint, tests, tooling tests, strict OpenSpec validation, skills check) and `pnpm doctor`.
-- [ ] 5.3 Write `docs/changes/add-design-system.md`.
+- [x] 5.1 Update `SETUP.md` where it names Barlow.
+- [x] 5.2 Run `pnpm verify` (typecheck, lint, tests, tooling tests, strict OpenSpec validation, skills check) and `pnpm doctor`.
+- [x] 5.3 Write `docs/changes/add-design-system.md`.
 - [ ] 5.4 Developer checks the icon and splash in a native build.
