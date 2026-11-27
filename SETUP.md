@@ -23,13 +23,16 @@ the link opens whichever the OS feels like. Change it now.
 
 ## 2. Brand
 
-- [ ] Replace `assets/images/`: `icon.png`, `adaptive-icon.png`, `splash-icon.png`, `favicon.png`
-- [ ] Update `app.json` → the splash plugin's `backgroundColor` and `android.adaptiveIcon.backgroundColor`
-- [ ] Replace the colors and fonts in `src/styles/tokens.json`
+- [x] Replace `assets/images/`: `icon.png`, `adaptive-icon.png`, `splash-icon.png`, `favicon.png`
+- [x] Update `app.json` → the splash plugin's `backgroundColor` and `android.adaptiveIcon.backgroundColor`
+- [x] Replace the colors and fonts in `src/styles/tokens.json`
 
 Tokens are the single source (rule R6): change them there and the whole app
 follows. If you change the font family, update the imports in
-`src/providers/app-providers.tsx` too — they name the Barlow weights explicitly.
+`src/providers/app-providers.tsx` too — they name the Inter weights explicitly.
+
+Done for DistriLux in the change `add-design-system` (FRONT-02): the brand
+values come from `DESIGN.md` in the web repository.
 
 ## 3. Remove the template's leftovers
 

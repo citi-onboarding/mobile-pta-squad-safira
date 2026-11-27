@@ -1,10 +1,10 @@
 import {
-  Barlow_300Light,
-  Barlow_400Regular,
-  Barlow_500Medium,
-  Barlow_600SemiBold,
+  Inter_300Light,
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_600SemiBold,
   useFonts,
-} from "@expo-google-fonts/barlow";
+} from "@expo-google-fonts/inter";
 import * as SplashScreen from "expo-splash-screen";
 import * as SystemUI from "expo-system-ui";
 import { type ReactNode, useEffect } from "react";
@@ -41,10 +41,10 @@ export function AppProviders({
   initialMetrics = initialWindowMetrics,
 }: AppProvidersProps) {
   const [fontsLoaded] = useFonts({
-    Barlow_300Light,
-    Barlow_400Regular,
-    Barlow_500Medium,
-    Barlow_600SemiBold,
+    Inter_300Light,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_600SemiBold,
   });
 
   useEffect(() => {

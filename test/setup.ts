@@ -16,12 +16,13 @@ jest.mock("expo-system-ui", () => ({
   setBackgroundColorAsync: jest.fn().mockResolvedValue(undefined),
 }));
 
-jest.mock("@expo-google-fonts/barlow", () => ({
-  useFonts: () => [true, null],
-  Barlow_300Light: "Barlow_300Light",
-  Barlow_400Regular: "Barlow_400Regular",
-  Barlow_500Medium: "Barlow_500Medium",
-  Barlow_600SemiBold: "Barlow_600SemiBold",
+// `useFonts` is a jest.fn so tests can simulate the typeface still loading.
+jest.mock("@expo-google-fonts/inter", () => ({
+  useFonts: jest.fn(() => [true, null]),
+  Inter_300Light: "Inter_300Light",
+  Inter_400Regular: "Inter_400Regular",
+  Inter_500Medium: "Inter_500Medium",
+  Inter_600SemiBold: "Inter_600SemiBold",
 }));
 
 // Every test starts with clean mocks.
