@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved -- installed in the Green phase
 import { useFonts } from "@expo-google-fonts/inter";
 import * as SplashScreen from "expo-splash-screen";
 import * as SystemUI from "expo-system-ui";

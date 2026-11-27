@@ -13,9 +13,9 @@
 
 ## 3. Green
 
-- [ ] 3.1 Replace the values in `src/styles/tokens.json` (D1, D2, D4).
-- [ ] 3.2 Replace `@expo-google-fonts/barlow` with `@expo-google-fonts/inter` in `package.json`, the provider, the tokens and the test mock (D3).
-- [ ] 3.3 Update `app.json`: adaptive icon and splash backgrounds, `userInterfaceStyle` (D6, D7).
+- [x] 3.1 Replace the values in `src/styles/tokens.json` (D1, D2, D4).
+- [x] 3.2 Replace `@expo-google-fonts/barlow` with `@expo-google-fonts/inter` in `package.json`, the provider, the tokens and the test mock (D3).
+- [x] 3.3 Update `app.json`: adaptive icon and splash backgrounds, `userInterfaceStyle` (D6, D7).
 - [ ] 3.4 Generate `icon.png`, `adaptive-icon.png`, `splash-icon.png` and `favicon.png` from the brand SVGs (D5).
 - [ ] 3.5 Run the tests and confirm they pass.
 
