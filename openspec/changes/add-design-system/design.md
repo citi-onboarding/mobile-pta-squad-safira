@@ -45,7 +45,7 @@ PNG files are generated from the brand SVGs in the web repository (`src/shared/a
 - `icon.png`, 1024 × 1024: stacked negative logo centred on Marinho, square (each platform applies its own mask).
 - `adaptive-icon.png`, 1024 × 1024, transparent: the same logo inside the central 66 % safe zone; the Marinho comes from `android.adaptiveIcon.backgroundColor`.
 - `splash-icon.png`: the horizontal logo with the light on "LUX", transparent, on a Marinho splash background.
-- `favicon.png`, 48 × 48: stacked negative logo on Marinho, same as the portal favicon.
+- `favicon.png`, 48 × 48: stacked negative logo on a Marinho square, like the portal favicon (browsers show it too small for the portal's rounded corners to matter).
 
 ### D6. Light appearance only
 

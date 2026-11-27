@@ -1,15 +1,15 @@
 ## 1. SDD
 
 - [x] 1.1 Write proposal, design, spec and tasks for `add-design-system`.
-- [ ] 1.2 Validate with `pnpm spec:validate` and get the developer's confirmation.
+- [x] 1.2 Validate with `pnpm spec:validate` and get the developer's confirmation.
 
 ## 2. Red
 
-- [ ] 2.1 Developer writes the failing tests for every scenario:
+- [x] 2.1 Developer writes the failing tests for every scenario:
   - tokens: palette colors only, no success or warning, Pitanga for errors, contrast AA of the text pairs (`src/styles/__tests__/tokens.test.ts`);
   - provider: Porcelana native background, Inter in four weights before the splash hides (`src/providers/__tests__/app-providers.test.tsx`);
   - app config: Marinho adaptive icon and splash backgrounds, light appearance, image sizes (`tests/tooling/app-config.test.mjs`).
-- [ ] 2.2 Run the tests and confirm they fail for the expected reason.
+- [x] 2.2 Run the tests and confirm they fail for the expected reason.
 
 ## 3. Green
 

@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-unresolved -- installed in the Green phase
+import { useFonts } from "@expo-google-fonts/inter";
 import * as SplashScreen from "expo-splash-screen";
 import * as SystemUI from "expo-system-ui";
 import { Text } from "react-native";
@@ -24,6 +26,10 @@ function mount() {
 }
 
 describe("AppProviders", () => {
+  afterEach(() => {
+    jest.mocked(useFonts).mockReturnValue([true, null]);
+  });
+
   it("renders the children once the fonts have loaded", async () => {
     await mount();
 
@@ -34,7 +40,7 @@ describe("AppProviders", () => {
     await mount();
 
     await waitFor(() =>
-      expect(SystemUI.setBackgroundColorAsync).toHaveBeenCalledWith("#F5F5F5"),
+      expect(SystemUI.setBackgroundColorAsync).toHaveBeenCalledWith("#F1F5FC"),
     );
   });
 
@@ -42,5 +48,25 @@ describe("AppProviders", () => {
     await mount();
 
     await waitFor(() => expect(SplashScreen.hideAsync).toHaveBeenCalled());
+  });
+
+  it("loads Inter in the light, regular, medium and semibold weights", async () => {
+    await mount();
+
+    expect(useFonts).toHaveBeenCalledWith({
+      Inter_300Light: "Inter_300Light",
+      Inter_400Regular: "Inter_400Regular",
+      Inter_500Medium: "Inter_500Medium",
+      Inter_600SemiBold: "Inter_600SemiBold",
+    });
+  });
+
+  it("keeps the splash and renders nothing while Inter is loading", async () => {
+    jest.mocked(useFonts).mockReturnValue([false, null]);
+
+    await mount();
+
+    expect(screen.queryByText("content")).not.toBeOnTheScreen();
+    expect(SplashScreen.hideAsync).not.toHaveBeenCalled();
   });
 });
